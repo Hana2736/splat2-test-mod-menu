@@ -16,7 +16,8 @@ The nvnImguiInitialize method is called during initialization, you can create yo
 The nvnImguiCalc method is called every frame and is where you do your rendering. The method returns ImDrawData (you can return NULL if you dont want to draw anything right now) that will be drawn.
 Other methods shouldn't be edited.
 New methods might be introduced later to allow user to manually render to a different render target or in a different thread/render separate draw lists.
+There is currently no custom texture support as i do not know a way to properly load images from raw files like png or jpeg, once i figure it out therell be textures as well.
 
 # Installation
-Compile your code by running the shell script (./exlaunch.sh build)
+Compile your code by running the shell script (./exlaunch.sh build).
 Drop the contents from deploy folder into your game's exefs folder
