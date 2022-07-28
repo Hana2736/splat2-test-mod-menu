@@ -1013,9 +1013,14 @@ static void             UpdateViewportsNewFrame();
 //   - If you need a finite number of contexts, you may compile and use multiple instances of the ImGui code from a different namespace.
 // - DLL users: read comments above.
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Warray-bounds"
+
 void IMGUI_ASSERT_F(bool expression){
-    if(!expression) *(int*)69 = 69;
+    if(!expression) *(int*)69 = 69; // Crash if assertion fails to make debugging easy
 }
+
+#pragma GCC diagnostic pop
 
 #ifndef GImGui
 ImGuiContext*   GImGui = NULL;
