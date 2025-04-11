@@ -13,7 +13,7 @@ export ELF_EXTRACT=""
 # Python command to use. Must be Python 3.4+.
 export PYTHON="python3"
 # Make arguments.
-export MAKE_ARGS="-j8"
+export MAKE_ARGS="-j20"
 # JSON to use to make .npdm
 export NPDM_JSON="qlaunch.json"
 # Additional C/C++ flags to use.
@@ -32,7 +32,7 @@ export MOUNT_PATH="/mnt/k"
 # Settings for deploying over FTP. Used by the deploy-ftp.py script.
 export FTP_IP="10.0.0.199"
 export FTP_PORT="5000"
-export FTP_USERNAME="ewan"
+export FTP_USERNAME="hana"
 export FTP_PASSWORD="password1234!!"
 
 #-------------------------- End of user configuration --------------------------
